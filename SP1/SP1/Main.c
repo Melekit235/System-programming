@@ -120,7 +120,6 @@ void Main_OnPaint(HWND hWnd)
 
 	DrawSprite(hCmpDC, &hBitmap, &hBitmap);
 
-	//SetStretchBltMode(hdc, COLORONCOLOR);
 	BitBlt(hdc, 0, 0, rcClient.right, rcClient.bottom, hCmpDC, 0, 0, SRCCOPY);
 
 	DeleteDC(hCmpDC);
