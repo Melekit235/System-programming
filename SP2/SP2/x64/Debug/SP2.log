@@ -1,0 +1,20 @@
+﻿  Main.cpp
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(78,15): warning C4244: return: преобразование "WPARAM" в "int", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(139,20): warning C4838: Преобразование из "float" в "LONG" требует сужающего преобразования.
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(139,20): warning C4244: инициализация: преобразование "float" в "LONG", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(139,47): warning C4838: Преобразование из "float" в "LONG" требует сужающего преобразования.
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(139,47): warning C4244: инициализация: преобразование "float" в "LONG", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(139,69): warning C4838: Преобразование из "float" в "LONG" требует сужающего преобразования.
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(139,69): warning C4244: инициализация: преобразование "float" в "LONG", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(139,109): warning C4838: Преобразование из "float" в "LONG" требует сужающего преобразования.
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(139,109): warning C4244: инициализация: преобразование "float" в "LONG", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(167,48): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(174,19): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(177,13): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(195,24): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(232,32): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(274,55): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(295,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(301,39): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
+C:\Users\Melekit\source\repos\System-programming\SP2\SP2\Main.cpp(314,30): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+  SP2.vcxproj -> C:\Users\Melekit\source\repos\System-programming\SP2\x64\Debug\SP2.exe
