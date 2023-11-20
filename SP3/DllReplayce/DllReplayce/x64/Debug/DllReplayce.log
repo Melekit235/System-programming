@@ -1,0 +1,6 @@
+﻿D:\Installing\VisualStudio\IDE\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (DllReplayce.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  dll.cpp
+C:\Users\Melekit\source\repos\System-programming\SP3\DllReplayce\DllReplayce\dll.cpp(7,6): warning C4273: ReplaceStr: несовместимое связывание dll
+C:\Users\Melekit\source\repos\System-programming\SP3\DllReplayce\DllReplayce\dll.h(16,31): message : см. предыдущее определение "ReplaceStr"
+     Создается библиотека C:\Users\Melekit\source\repos\System-programming\SP3\DllReplayce\x64\Debug\DllReplace.lib и объект C:\Users\Melekit\source\repos\System-programming\SP3\DllReplayce\x64\Debug\DllReplace.exp
+  DllReplayce.vcxproj -> C:\Users\Melekit\source\repos\System-programming\SP3\DllReplayce\x64\Debug\DllReplace.dll
