@@ -13,4 +13,5 @@ struct Params
 	char right[255];
 };
 
-extern "C" MYLIBRARY_API void ReplaceStr(Params* params);
+extern "C" MYLIBRARY_API void ReplaceStr(DWORD processId, const char* strForSearch, const char* strReplace);
+extern "C" MYLIBRARY_API void ReplaceStrInject(Params* params);

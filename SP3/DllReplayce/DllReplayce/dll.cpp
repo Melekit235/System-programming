@@ -1,17 +1,10 @@
 #include "pch.h"
 #include "dll.h"
-#include <vector>
-#include <iostream>
-#include <processthreadsapi.h>
 
-void ReplaceStr(Params* params)
+void ReplaceStr(DWORD processId, const char* strForSearch, const char* strReplace)
 {
-	DWORD ProcessId = GetCurrentProcessId();
-	const char* strForSearch = params->left;
-	const char* strReplace = params->right;
-
 	HANDLE handle;
-	handle = OpenProcess(PROCESS_VM_READ | PROCESS_VM_WRITE | PROCESS_QUERY_INFORMATION, FALSE, ProcessId);
+	handle = OpenProcess(PROCESS_VM_READ | PROCESS_VM_WRITE | PROCESS_QUERY_INFORMATION, FALSE, processId);
 	
 	if (handle != NULL)
 	{
@@ -62,3 +55,11 @@ void ReplaceStr(Params* params)
 		}
 	}
 }
+
+void ReplaceStrInject(Params* param) {
+	DWORD processId = GetCurrentProcessId();
+	const char* strForSearch = param->left;
+	const char* strReplace = param->right;
+
+	ReplaceStr(processId, strForSearch, strReplace);
+};
