@@ -6,10 +6,12 @@
 
 int main()
 {
-
+    //const char str[] = { 'w', 'h', 'y', ' ', 'a', 'm', ' ', 'i', ' ', 'd', 'o', 'i', 'n', 'g', ' ', 't', 'h', 'i', 's', '\0'};
+    const char str[] = { 'w', 'h', 'y', '\0'};
+   
     while (true)
     {
-        std::cout << 'i' << std::endl;
+        std::cout << str << std::endl;
         _getch();
     }
 }
