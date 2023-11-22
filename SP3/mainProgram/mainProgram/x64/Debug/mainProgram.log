@@ -1,4 +1,0 @@
-﻿  mainProgram.cpp
-C:\Users\Melekit\source\repos\System-programming\SP3\mainProgram\mainProgram\mainProgram.cpp(88,28): warning C4312: приведение типов: преобразование из "DWORD" в "HMODULE" большего размера
-  mainProgram.vcxproj -> C:\Users\Melekit\source\repos\System-programming\SP3\mainProgram\x64\Debug\mainProgram.exe
-  Скопировано файлов: 0.

@@ -1,2 +1,0 @@
-﻿mainProgram.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp__ReplaceStr в функции _main.
-C:\Users\Melekit\source\repos\System-programming\SP3\mainProgram\Debug\mainProgram.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
