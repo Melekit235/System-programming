@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  dllmain.cpp
+  dll.cpp
+C:\Users\Melekit\source\repos\System-programming\SP3\dll\dll\dll.cpp(4,6): warning C4273: ReplaceStr: несовместимое связывание dll
+C:\Users\Melekit\source\repos\System-programming\SP3\dll\dll\dll.h(16,31): message : см. предыдущее определение "ReplaceStr"
+C:\Users\Melekit\source\repos\System-programming\SP3\dll\dll\dll.cpp(59,6): warning C4273: ReplaceStrInject: несовместимое связывание dll
+C:\Users\Melekit\source\repos\System-programming\SP3\dll\dll\dll.h(17,31): message : см. предыдущее определение "ReplaceStrInject"
+  Создание кода...
+     Создается библиотека C:\Users\Melekit\source\repos\System-programming\SP3\dll\Debug\dll.lib и объект C:\Users\Melekit\source\repos\System-programming\SP3\dll\Debug\dll.exp
+  dll.vcxproj -> C:\Users\Melekit\source\repos\System-programming\SP3\dll\Debug\dll.dll
