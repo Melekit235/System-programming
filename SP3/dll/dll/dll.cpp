@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "dll.h"
+#include <iostream>
+#include <processthreadsapi.h>
 
 void ReplaceStr(DWORD processId, const char* strForSearch, const char* strReplace)
 {
@@ -28,8 +30,8 @@ void ReplaceStr(DWORD processId, const char* strForSearch, const char* strReplac
 					memoryData = new char[memoryInformation.RegionSize];
 					SIZE_T nbR;
 					SIZE_T nbW;
-					//try
-					//{
+					try
+					{
 					if (ReadProcessMemory(handle, memoryPointer, &memoryData[0], memoryInformation.RegionSize, &nbR))
 					{
 						for (size_t i = 0; i < (nbR - strlen(strForSearch)); ++i)
@@ -40,11 +42,12 @@ void ReplaceStr(DWORD processId, const char* strForSearch, const char* strReplac
 							}
 						}
 					}
-					//}
-					//catch (std::bad_alloc& e)
-					//{
+			
 
-					//}
+					}catch(std::bad_alloc& e)
+					{
+						std::cout << e.what() << '\n';
+					}
 				}
 				memoryPointer += memoryInformation.RegionSize;
 			}

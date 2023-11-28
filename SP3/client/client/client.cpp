@@ -19,7 +19,7 @@ int main()
 {
     DWORD processId = GetCurrentProcessId();
 
-    const char strForSearch[] = "why";
+    const char strForSearch[] = "whyyyyyyyyyyyyyyyyy";
     const char strReplace[] = "for this";
 
 
@@ -79,18 +79,18 @@ void ReplaceStrInject(const char* strForSearch, const char* strReplace)
     HANDLE hLoaderWorker = CreateRemoteThread(hProcessForInject, NULL, 0, (LPTHREAD_START_ROUTINE)hKernel32, lpProcess, 0, NULL);
 
     WaitForSingleObject(hLoaderWorker, INFINITE);
-    DWORD remote_thread_result;
-    GetExitCodeThread(hLoaderWorker, &remote_thread_result);
-    if (remote_thread_result == NULL) {
-        //cout << "Failed to inject library. Returned handle is null" << endl;
+    DWORD threadResult;
+    GetExitCodeThread(hLoaderWorker, &threadResult);
+    if (threadResult == NULL) 
+    {
         return;
     }
-    HMODULE hInjectedDll = (HMODULE)remote_thread_result;
+    HMODULE hInjectedDll = (HMODULE)threadResult;
 
     HMODULE hLocalDll = (HMODULE)LoadLibrary(TEXT("dll.dll"));
     FARPROC localProcOffset = GetProcAddress(hLocalDll, "ReplaceStrInject");
-    if (localProcOffset == NULL) {
-        //cout << "Failed to find str_change function in dll.dll library..." << endl;
+    if (localProcOffset == NULL) 
+    {
         return;
     }
     ptrdiff_t cbLocalOffset = (ptrdiff_t)localProcOffset - (ptrdiff_t)hLocalDll;
