@@ -1,0 +1,69 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.pdb
+*.obj
+*.idb
+*.pch
+*.ilk
+*.aps
+*.ipch
+*.exp
+*.log
+*.tlog
+*.manifest
+*.dll
+*.exe
+
+# Ignore C/C++ specific files and folders
+Debug/
+Release/
+x64/
+x86/
+ipch/
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.obj
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
