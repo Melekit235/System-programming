@@ -31,39 +31,8 @@
 *.out
 *.app
 
-# Ignore Visual Studio files
 .vs/
-*.suo
-*.user
-*.sln
-*.vcxproj
-*.vcxproj.filters
-*.pdb
-*.obj
-*.idb
-*.pch
-*.ilk
-*.aps
-*.ipch
-*.exp
-*.log
-*.tlog
-*.manifest
-*.dll
-*.exe
-
-# Ignore C/C++ specific files and folders
 Debug/
 Release/
 x64/
 x86/
-ipch/
-*.opensdf
-*.VC.db
-*.VC.opendb
-*.obj
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
