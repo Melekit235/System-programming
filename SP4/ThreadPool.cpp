@@ -45,7 +45,7 @@ DWORD WINAPI ThreadPool::DoThreadWork(LPVOID obj)
             ExitThread(0);
         }
         std::vector<std::string>* dataPiece = (std::vector<std::string>*)tmp->params;
-        std::cout << "     Thread ID: " << GetCurrentThreadId() << ", Data: ";
+        std::cout << "    Thread ID: " << GetCurrentThreadId() << ", Data: ";
         for (const std::string& str : *dataPiece) {
             std::cout << str << " ";
         }
@@ -53,7 +53,7 @@ DWORD WINAPI ThreadPool::DoThreadWork(LPVOID obj)
 
         tmp->func(tmp->params);
         dataPiece = (std::vector<std::string>*)tmp->params;
-        std::cout << "     Thread ID: " << GetCurrentThreadId() << ", Data after sorting: ";
+        std::cout << "    Thread ID: " << GetCurrentThreadId() << ", Data after sorting: ";
         for (const std::string& str : *dataPiece) {
             std::cout << str << " ";
         }
